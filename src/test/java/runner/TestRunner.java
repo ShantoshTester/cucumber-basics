@@ -5,12 +5,12 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"src/test/resources/features/Registration.feature"},
+@CucumberOptions(features = {"src/test/resources/features/"},
                 glue = {"stepdefinition","hooks"},
                 dryRun = false,
-                tags = "@Map",
+                tags = "",
                 monochrome = false,
-                plugin = {"pretty"})
+                plugin = {"pretty"},publish = true)
 public class TestRunner {
 
 
